@@ -8,6 +8,7 @@
 body, html {
     padding:0px;
     margin:0px;
+    background-color: black;
 }
 
 .white{
@@ -35,3 +36,36 @@ body, html {
 .bold{
     font-weight: bold;
 }
+
+
+/* Style for the text container */
+.text-container {
+    font-family: Arial, sans-serif;
+    font-size: 74px;
+   
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 2px solid #ec0000; /* Create the blinking cursor effect */
+    padding-right: 5px; /* Add some spacing for the cursor */
+    animation: typing 4s steps(40)infinite, blink 1s infinite step-end;
+    color: whitesmoke;
+    margin: 15%;
+    margin-left: 19%;
+}
+
+/* Keyframes animation for typing effect */
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/* Apply word-wrap for smaller screens */
+@media screen and (max-width: 600px) {
+    .text-container {
+        white-space: normal; /* Allow text to wrap */
+        border-right: none; /* Remove the cursor effect */
+        margin-top: 40%;
+    }
+}
+
+
+
