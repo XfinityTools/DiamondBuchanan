@@ -1,0 +1,37 @@
+.banner{
+    width: 100%;
+    background-color: black;
+    display:flex;  /* child elements automatically align like column or row with auto width and auto height */
+    position: absolute;
+}
+
+body, html {
+    padding:0px;
+    margin:0px;
+}
+
+.white{
+    color: white;
+}
+
+
+
+.left-5P{
+    margin-left:5%;
+}
+
+.left-40P{
+    margin-left:40%;
+}
+
+.left-50P{
+    margin-left:50%;
+}
+
+.right-20P{
+    margin-right:20%;
+}
+
+.bold{
+    font-weight: bold;
+}
